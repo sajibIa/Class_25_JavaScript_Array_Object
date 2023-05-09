@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let number=9
+        let reject=8
+        
+        
+        if(number<reject){
+            console.log("You press wrong number")
+        }else{
+            for(let i=1;i<=number; i++){
+            if(i!=reject){
+                console.log("////  "+i+" is Start")
+            for(let j=1;j<=10;j++){
+               // if(j!=5){                    //five er row missing kora hoyeche
+                    console.log(i+" X "+j+" = "+j*i)
+
+               // }
+            }
+            if(i<number){
+                console.log("////  "+i+" is End")
+                console.log("========================")
+
+            }else{
+                console.log("Total end")
+            }
+
+            }
+           
+        }
+
+        }
+        
+    </script>
+</body>
+</html>
