@@ -10,53 +10,53 @@
     <script>
         let obj=[
             {
-                "namta": 4
+                "namta":"5"
             },
             {
-                "namta": 8
+                "namta":"6"
             },
             {
-                "namta": 7
+                "namta":"8"
             },
             {
-                "namta": 18
+                "namta":"10"
             },
             {
-                "namta": 19
+                "namta":"15"
             },
-            {
-                "namta": 32
-            },
-          
-            {
-                "namta": 12
-            },
-          
+            
         ]
-       
-       
-
-        for(let x=0; x<obj.length;x++){
-            
-                console.log("////  "+obj[x].namta+" is start")
-            for(let y=1;y<=10;y++){
-                console.log(obj[x].namta+" X "+y+" = "+obj[x].namta*y)
-            }
-            console.log("////  "+obj[x].namta+" is end")
-            if([x]<obj.length-1){
-                console.log("=======================")
-
-            }else{
-                console.log("Total end")
-            }
-
-            
-          
-          
-              
- 
-         
+        let reject=10
+    
+        let sum=0
+        for(let i=0;i<obj.length;i++){       // ai loop-ta neya hoyeche object-er value theke reject boro ki nha?
+            // console.log(obj[i].namta);
+            if(obj[i].namta<reject){         // condition jodi true hoy *continue korbe (and sum=0 thakbe)
+                continue                     // continue means=(aber loop-e fire jao)
+               }else{
+                    sum++
+                }
         }
+        // console.log(sum)
+        
+        for(let j=0;j<obj.length;j++){
+            if(obj[j].namta!=reject){
+                if(sum==0){
+                        console.log("you press wrong number")
+                    }
+                else{
+                    for(let k=0;k<1;k++){
+                        // console.log(obj[j].namta)
+                        for(let o=1;o<=10;o++){
+                            console.log(obj[j].namta+" X "+o+" = "+obj[j].namta*o)
+                        } 
+                        if([j]<obj.length-1){
+                            console.log("=====================")
+                        }else{
+                            console.log("All end")
+
+        } } } } }
+
     </script>
 </body>
 </html>
