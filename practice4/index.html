@@ -26,7 +26,7 @@
             },
             
         ]
-        let reject=5
+        let reject=80
     
         let sum=0
         for(let i=0;i<obj.length;i++){       // ai loop-ta neya hoyeche object-er value theke reject boro ki nha?
@@ -45,12 +45,14 @@
                         console.log("you have pressed wrong number")
                     }
                 else{
+                    console.log("////      "+obj[j].namta+" is start");
                     for(let k=0;k<1;k++){
                         // console.log(obj[j].namta)
                         for(let o=1;o<=10;o++){
                             console.log(obj[j].namta+" X "+o+" = "+obj[j].namta*o)
                         } 
-                        if([j]<obj.length-1){
+                        if(j<obj.length-1){
+                            console.log("////      "+obj[j].namta+" is end");
                             console.log("=====================")
                         }else{
                             console.log("All end")
